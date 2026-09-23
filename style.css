@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background: #f8f7f3;
+  color: #24302b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  border-bottom: 1px solid #d6d9d0;
+}
+
+nav, main {
+  max-width: 760px;
+  margin: auto;
+  padding: 24px;
+}
+
+nav a {
+  margin-right: 24px;
+}
+
+a {
+  color: #175d51;
+}
+
+main {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 48px;
+}
+
+.label {
+  color: #175d51;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.introduction {
+  font-size: 22px;
+}
