@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Peter Herbszt-Romanek works on sign language linguistics, Deaf communities, and community-governed language resources.">
+  <title>Peter Herbszt-Romanek — Sign language linguistics</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7f3;
+      --ink: #232d29;
+      --muted: #59635e;
+      --line: #d6d9d0;
+      --accent: #175d51;
+      --accent-light: #e8f0e9;
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--accent); text-underline-offset: .19em; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    .skip { position: absolute; left: -9999px; top: 12px; z-index: 5; background: var(--ink); color: white; padding: .5rem .8rem; }
+    .skip:focus { left: 12px; }
+    .wrap { max-width: var(--max); padding: 0 clamp(1.4rem, 5vw, 4.5rem); margin: auto; }
+    header { border-bottom: 1px solid var(--line); }
+    .top { min-height: 87px; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .wordmark { color: var(--ink); font-size: .92rem; font-weight: 700; letter-spacing: .01em; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: .55rem 1.5rem; }
+    nav a { color: var(--muted); font-size: .84rem; text-decoration: none; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; }
+    main { padding-bottom: 5rem; }
+    .hero { display: grid; grid-template-columns: 1.4fr .6fr; gap: 2rem; align-items: end; padding-top: clamp(5rem, 11vw, 9rem); padding-bottom: clamp(5rem, 9vw, 8rem); }
+    .eyebrow, .label { font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { line-height: 1.14; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.035em; }
+    h1 { max-width: 760px; font-size: clamp(3.25rem, 7vw, 6.1rem); margin: 1.2rem 0 1.6rem; }
+    .intro { font-size: clamp(1.13rem, 1.8vw, 1.45rem); max-width: 700px; line-height: 1.52; }
+    .hero-side { border-left: 2px solid var(--accent); padding-left: 1.2rem; color: var(--muted); font-size: .88rem; margin-bottom: .45rem; }
+    .hero-side p { margin-bottom: .45rem; }
+    section { border-top: 1px solid var(--line); padding: clamp(3.5rem, 7vw, 6rem) 0; scroll-margin-top: 1rem; }
+    .section-grid { display: grid; grid-template-columns: minmax(170px, .4fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 7rem); }
+    h2 { font-size: clamp(2.1rem, 4vw, 3.4rem); margin: .6rem 0 0; }
+    .prose { max-width: 680px; }
+    .prose p { margin-bottom: 1.2rem; }
+    .prose p:last-child { margin-bottom: 0; }
+    .themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+    .theme { padding-top: 1.25rem; border-top: 2px solid var(--accent); }
+    .num { color: var(--accent); font-size: .8rem; font-weight: 700; }
+    h3 { font-size: 1.12rem; margin: 1.45rem 0 .7rem; }
+    .theme p { color: var(--muted); font-size: .91rem; line-height: 1.6; margin-bottom: 0; }
+    .project { display: grid; grid-template-columns: 160px 1fr; gap: 1.4rem; padding: 1.4rem 0; border-top: 1px solid var(--line); }
+    .project:first-child { border-top: 0; padding-top: 0; }
+    .project h3 { margin: 0 0 .45rem; font-size: 1.08rem; }
+    .project p { margin: 0; color: var(--muted); font-size: .93rem; }
+    .project-kind { color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; padding-top: .2rem; }
+    .contact { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+    .contact .prose { font-size: 1.12rem; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; padding: 1.8rem 0 2.4rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      .top { align-items: flex-start; flex-direction: column; justify-content: center; padding-top: 1.2rem; padding-bottom: 1.2rem; }
+      .hero, .section-grid, .themes { grid-template-columns: 1fr; }
+      .hero { gap: 2.5rem; }
+      .section-grid { gap: 1.5rem; }
+      .themes { gap: 2.3rem; }
+      .project { grid-template-columns: 1fr; gap: .35rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap top">
+      <a class="wordmark" href="#top">Peter Herbszt-Romanek</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div id="top" class="wrap hero">
+      <div>
+        <div class="eyebrow">Linguist · Tallinn, Estonia</div>
+        <h1>Language lives in communities.</h1>
+        <p class="intro">I study sign languages, the people who use them, and the research infrastructures that make linguistic knowledge accessible and accountable.</p>
+      </div>
+      <div class="hero-side" aria-label="Research focus">
+        <p>Sign language linguistics</p>
+        <p>Deaf communities</p>
+        <p>Language resources</p>
+      </div>
+    </div>
+
+    <section id="about" class="wrap section-grid" aria-labelledby="about-heading">
+      <div><div class="label">01 / Introduction</div><h2 id="about-heading">About</h2></div>
+      <div class="prose">
+        <p>I am a Deaf linguist working across sign language research, language documentation, and community engagement. My background in classical philology informs how I think about language, evidence, and the histories of knowledge.</p>
+        <p>At Tallinn University, my work with the Estonian Sign Language Research Group (EVKUR) brings linguistic inquiry into conversation with the experiences and priorities of Deaf communities. I also work across European collaborations concerned with sign language education and language resources.</p>
+      </div>
+    </section>
+
+    <section id="research" class="wrap" aria-labelledby="research-heading">
+      <div class="section-grid">
+        <div><div class="label">02 / Questions</div><h2 id="research-heading">Research</h2></div>
+        <div class="themes">
+          <div class="theme"><span class="num">01</span><h3>Structure and variation</h3><p>How sign languages express grammatical meaning, and how forms vary across people, places, and contexts.</p></div>
+          <div class="theme"><span class="num">02</span><h3>Language and community</h3><p>How Deaf communities sustain, teach, and make choices about their languages in changing institutional settings.</p></div>
+          <div class="theme"><span class="num">03</span><h3>Knowledge infrastructure</h3><p>How corpora, signbanks, and research practices can be accessible, revisable, and governed with communities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap section-grid" aria-labelledby="projects-heading">
+      <div><div class="label">03 / Ongoing work</div><h2 id="projects-heading">Projects</h2></div>
+      <div>
+        <div class="project"><div class="project-kind">Estonian Sign Language</div><div><h3>EVKUR</h3><p>Research on grammar, language use, teaching and learning, and the development of language resources for Estonian Sign Language.</p></div></div>
+        <div class="project"><div class="project-kind">European collaboration</div><div><h3>DeafSign</h3><p>Collaborative work on sign language education, access, and recommendations for European contexts.</p></div></div>
+        <div class="project"><div class="project-kind">Research infrastructure</div><div><h3>SignBank 2.0 and Visuolab</h3><p>Work on connected sign language resources, including their design, validation, access, and long-term governance.</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap section-grid contact" aria-labelledby="contact-heading">
+      <div><div class="label">04 / Conversation</div><h2 id="contact-heading">Contact</h2></div>
+      <div class="prose"><p>I welcome conversations about sign language research, Deaf academic spaces, and community-governed language resources.</p><p>Find me on <a href="https://github.com/hpzr" rel="me">GitHub</a>. <!-- Add your public email or institutional profile link here if you want a direct contact route. --></p></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© Peter Herbszt-Romanek</span><span>Research, language, community.</span></div></footer>
+</body>
+</html>
